@@ -1,5 +1,3 @@
-# Title
-
 <!-- Provide a link to the issue you are solving in this pull request -->
 Fix #XXX
 <!-- Provide a link to the documentation related to this this pull request -->
