@@ -1,6 +1,9 @@
 # Updatecli
 
-![GitHub Org's stars](https://img.shields.io/github/stars/updatecli/updatecli?style=for-the-badge)![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/updatecli/updatecli?style=for-the-badge)![GitHub](https://img.shields.io/github/license/updatecli/updatecli?style=for-the-badge)
+![GitHub Org's stars](https://img.shields.io/github/stars/updatecli/updatecli?style=for-the-badge)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/updatecli/updatecli?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/updatecli/updatecli?style=for-the-badge)
+![](https://img.shields.io/matrix/updatecli:matrix.org?style=for-the-badge)
 
 Updatecli is an automation engine that allows you to define custom update pipelines.
 
