@@ -1,1 +1,5 @@
+# How to configure this file
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository#about-funding-files
+
 github: [olblak, dduportal]
+open_collective: updatecli
