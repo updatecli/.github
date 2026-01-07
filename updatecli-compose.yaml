@@ -7,7 +7,7 @@ policies:
       - updatecli/values.d/scm_githubsearch.yaml
 
   - name: Default - Sync Updatecli values files from github.com/updatecli/updatecli
-    policy: ghcr.io/updatecli/policies/file:0.3.2
+    policy: ghcr.io/updatecli/policies/file:0.3.2@sha256:980f4a02f3aa4f32d87edf42aa2a0a56b0f4d03d24ee6e3b51a211e4610d283c
     values:
       - updatecli/values.d/scm_githubsearch.yaml
       - updatecli/values.d/sync_gha_updatecli.yaml
