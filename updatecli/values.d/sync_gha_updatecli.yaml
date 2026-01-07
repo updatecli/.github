@@ -1,0 +1,14 @@
+src:
+  url: "https://github.com/updatecli/updatecli.git"
+  branch: "main"
+
+files:
+  - src: CODE_OF_CONDCUCT.md
+    dst: CODE_OF_CONDCUCT.md
+  - src: LICENSE
+    dst: LICENSE
+  - src: .github/workflows/typos.yaml
+    dst: .github/workflows/typos.yaml
+
+pr:
+  automerge: false

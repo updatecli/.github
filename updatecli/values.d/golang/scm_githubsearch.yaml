@@ -1,0 +1,10 @@
+scm:
+  enabled: true
+  kind: githubsearch
+  search: "org:updatecli language:Go archived:false"
+  branch: "^main$|^master$"
+  commitusingapi: true
+  user: updateclibot
+  limit: 0
+
+automerge: false
