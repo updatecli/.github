@@ -6,11 +6,11 @@ policies:
     values:
       - updatecli/values.d/scm_githubsearch.yaml
 
-  - name: Sync Updatecli values files from github.com/updatecli/updatecli
+  - name: Golang - Sync Updatecli values files from github.com/updatecli/updatecli
     policy: ghcr.io/updatecli/policies/file:0.3.2
     values:
-      - updatecli/values.d/scm_githubsearch.yaml
-      - updatecli/values.d/sync_gha_updatecli.yaml
+      - updatecli/values.d/golang/scm_githubsearch.yaml
+      - updatecli/values.d/golang/sync_gha_updatecli.yaml
 
   - name: Update Updatecli policies
     policy: ghcr.io/updatecli/policies/updatecli/autodiscovery:0.7.0@sha256:6890c4b4093a80063f518101881098fab8211c986481641faaf797a9ad5a31c3
