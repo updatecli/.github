@@ -1,0 +1,28 @@
+---
+policies:
+  - name: Local Updatecli Website Policies
+    config:
+      - updatecli/updatecli.d/
+    values:
+      - updatecli/values.d/scm_githubsearch.yaml
+
+  - name: Sync Updatecli values files from github.com/updatecli/updatecli
+    policy: ghcr.io/updatecli/policies/file:0.3.2
+    values:
+      - updatecli/values.d/scm_githubsearch.yaml
+      - updatecli/values.d/sync_gha_updatecli.yaml
+
+  - name: Update Updatecli policies
+    policy: ghcr.io/updatecli/policies/updatecli/autodiscovery:0.7.0@sha256:6890c4b4093a80063f518101881098fab8211c986481641faaf797a9ad5a31c3
+    values:
+      - updatecli/values.d/scm.yaml
+
+  - name: Update githubactions
+    policy: ghcr.io/updatecli/policies/autodiscovery/githubaction:0.3.0@sha256:3b5425da2a2a2b89bb69463f1294704c33730358c66140efb93cab14b2868b06
+    values:
+      - updatecli/values.d/scm.yaml
+
+  - name: Handle Updatecli version in GitHub action
+    policy: ghcr.io/updatecli/policies/updatecli/githubaction:0.7.0@sha256:a97518f118b03d2f63f45378e1961028b07c23d53db91db892893ff240fa5f4e
+    values:
+      - updatecli/values.d/scm.yaml
