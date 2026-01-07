@@ -3,8 +3,8 @@ src:
   branch: "main"
 
 files:
-  - src: CODE_OF_CONDCUCT.md
-    dst: CODE_OF_CONDCUCT.md
+  - src: CODE_OF_CONDUCT.md
+    dst: CODE_OF_CONDUCT.md
   - src: LICENSE
     dst: LICENSE
   - src: .github/workflows/typos.yaml
