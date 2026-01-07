@@ -11,4 +11,4 @@ files:
     dst: .github/workflows/updatecli_update.yaml
 
 pr:
-  automerge: true
+  automerge: false
