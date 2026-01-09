@@ -1,0 +1,35 @@
+title: Update Apache 2 License
+
+src:
+  url: "https://github.com/updatecli/updatecli.git"
+  branch: "main"
+
+files:
+  - src: LICENSE
+    dst: LICENSE
+
+pr:
+  title: Update Apache 2 License
+  automerge: false
+
+scm:
+  enabled: true
+  kind: githubsearch
+  search: |
+    repo:updatecli/updatecli-action
+    repo:updatecli/updatecli
+    repo:updatecli/asdf-updatecli
+    repo:updatecli/releasepost-action
+    repo:updatecli/releasepost
+    repo:updatecli/plugins
+    repo:updatecli/policies
+    repo:updatecli/demo-terminal
+    repo:updatecli/website
+    repo:updatecli/homebrew-updatecli
+    repo:updatecli/charts
+    repo:updatecli/kubernetes-management
+
+  branch: "^main$|^master$"
+  commitusingapi: true
+  user: updateclibot
+  limit: 0
