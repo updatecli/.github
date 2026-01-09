@@ -1,0 +1,24 @@
+title: Sync default repository files
+
+src:
+  url: "https://github.com/updatecli/updatecli.git"
+  branch: "main"
+
+files:
+  - src: CODE_OF_CONDUCT.md
+    dst: CODE_OF_CONDUCT.md
+  - src: .github/workflows/typos.yaml
+    dst: .github/workflows/typos.yaml
+
+pr:
+  automerge: false
+  title: "chore: sync default repository files"
+
+scm:
+  enabled: true
+  kind: githubsearch
+  search: "org:updatecli archived:false"
+  branch: "^main$|^master$"
+  commitusingapi: true
+  user: updateclibot
+  limit: 0

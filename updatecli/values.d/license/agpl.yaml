@@ -1,0 +1,25 @@
+title: "Updatecli AGPL License"
+src:
+  url: "https://github.com/updatecli/udash.git"
+  branch: "main"
+
+files:
+  - src: LICENSE
+    dst: LICENSE
+
+pr:
+  automerge: false
+  title: "chore: update AGPL License"
+
+scm:
+  enabled: true
+  kind: githubsearch
+  search: |
+    repo:updatecli/udash
+    repo:updatecli/udash-front
+  branch: "^main$|^master$"
+  commitusingapi: true
+  user: updateclibot
+  limit: 0
+
+automerge: false
