@@ -1,22 +1,25 @@
 ---
 policies:
-  - name: Local Updatecli Website Policies
-    config:
-      - updatecli/updatecli.d/
-    values:
-      - updatecli/values.d/scm_githubsearch.yaml
-
-  - name: Default - Sync Updatecli values files from github.com/updatecli/updatecli
+  - name: Sync Default repository files
     policy: ghcr.io/updatecli/policies/file:0.3.3@sha256:791ae27605f48fd82f4c2b986f60ac6971f36a247c8ddfde51d28a60830917c7
     values:
-      - updatecli/values.d/scm_githubsearch.yaml
-      - updatecli/values.d/sync_gha_updatecli.yaml
+      - updatecli/values.d/sync_default.yaml
+
+  - name: Sync AGPL license
+    policy: ghcr.io/updatecli/policies/file:0.3.3@sha256:791ae27605f48fd82f4c2b986f60ac6971f36a247c8ddfde51d28a60830917c7
+    values:
+      - updatecli/values.d/license/agpl.yaml
+
+  - name: Sync Apache license
+    policy: ghcr.io/updatecli/policies/file:0.3.3@sha256:791ae27605f48fd82f4c2b986f60ac6971f36a247c8ddfde51d28a60830917c7
+    values:
+      - updatecli/values.d/license/apache2.yaml
 
   - name: Golang - Sync Updatecli values files from github.com/updatecli/updatecli
     policy: ghcr.io/updatecli/policies/file:0.3.3@sha256:791ae27605f48fd82f4c2b986f60ac6971f36a247c8ddfde51d28a60830917c7
     values:
       - updatecli/values.d/golang/scm_githubsearch.yaml
-      - updatecli/values.d/golang/sync_gha_updatecli.yaml
+      - updatecli/values.d/golang/sync_updatecli_gha_updatecli.yaml
 
   - name: Update Updatecli policies
     policy: ghcr.io/updatecli/policies/updatecli/autodiscovery:0.7.0@sha256:6890c4b4093a80063f518101881098fab8211c986481641faaf797a9ad5a31c3
