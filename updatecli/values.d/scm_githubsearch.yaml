@@ -1,7 +1,7 @@
 scm:
   enabled: true
   kind: githubsearch
-  search: "org:updatecli archived:false"
+  search: "org:updatecli archived:false is:public"
   branch: "^main$|^master$"
   commitusingapi: true
   user: updateclibot
