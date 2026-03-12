@@ -33,6 +33,6 @@ policies:
       - updatecli/values.d/updatecli_gha.yaml
 
   - name: Install Zizmor everywhere
-    policy: ghcr.io/updatecli/policies/zizmor/githubaction/scaffold:0.5.0@sha256:1acbf6167a1df5522e0a4ba4aa7e1aa2dc404e4e8035a565d6a0157fadb93380
+    policy: ghcr.io/updatecli/policies/zizmor/githubaction/scaffold:0.5.1@sha256:810e06a3a175cd6ab400d6274e7678ba7b23c19f6f22407ecf96bd7e5b48a182
     values:
       - updatecli/values.d/scm_githubsearch.yaml
