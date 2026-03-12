@@ -31,3 +31,8 @@ policies:
     values:
       - updatecli/values.d/scm.yaml
       - updatecli/values.d/updatecli_gha.yaml
+
+  - name: Install Zizmor everywhere
+    policy: ghcr.io/updatecli/policies/zizmor/githubaction/scaffold:0.4.0
+    values:
+      - updatecli/values.d/scm_githubsearch.yaml
