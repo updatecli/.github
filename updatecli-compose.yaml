@@ -1,38 +1,38 @@
 ---
 policies:
   - name: Sync Default repository files
-    policy: ghcr.io/updatecli/policies/file:0.3.3@sha256:791ae27605f48fd82f4c2b986f60ac6971f36a247c8ddfde51d28a60830917c7
+    policy: ghcr.io/updatecli/policies/file:0.3.4@sha256:52562d8f76f8148ac82146ebed48ad75c85408537a6187543179201a65ab7db5
     values:
       - updatecli/values.d/sync_default.yaml
 
   - name: Sync AGPL license
-    policy: ghcr.io/updatecli/policies/file:0.3.3@sha256:791ae27605f48fd82f4c2b986f60ac6971f36a247c8ddfde51d28a60830917c7
+    policy: ghcr.io/updatecli/policies/file:0.3.4@sha256:52562d8f76f8148ac82146ebed48ad75c85408537a6187543179201a65ab7db5
     values:
       - updatecli/values.d/license/agpl.yaml
 
   - name: Sync Apache license
-    policy: ghcr.io/updatecli/policies/file:0.3.3@sha256:791ae27605f48fd82f4c2b986f60ac6971f36a247c8ddfde51d28a60830917c7
+    policy: ghcr.io/updatecli/policies/file:0.3.4@sha256:52562d8f76f8148ac82146ebed48ad75c85408537a6187543179201a65ab7db5
     values:
       - updatecli/values.d/license/apache2.yaml
 
   - name: Update Updatecli policies
-    policy: ghcr.io/updatecli/policies/updatecli/autodiscovery:0.7.0@sha256:6890c4b4093a80063f518101881098fab8211c986481641faaf797a9ad5a31c3
+    policy: ghcr.io/updatecli/policies/updatecli/autodiscovery:0.8.1@sha256:f8edda1a6cbf0d7274e2b847ede29fc4dc70dd5302ccb8575ae21b069cc0d8a0
     values:
       - updatecli/values.d/scm.yaml
 
   - name: Update githubactions
-    policy: ghcr.io/updatecli/policies/autodiscovery/githubaction:0.3.0@sha256:3b5425da2a2a2b89bb69463f1294704c33730358c66140efb93cab14b2868b06
+    policy: ghcr.io/updatecli/policies/autodiscovery/githubaction:0.4.1@sha256:869b676074f9fee7edd5d488140a12c3b09a5f8a175f12f26ea85a4f8bd0a9d1
     values:
       - updatecli/values.d/scm.yaml
       - updatecli/values.d/githubaction.yaml
 
   - name: Handle Updatecli version in GitHub action
-    policy: ghcr.io/updatecli/policies/updatecli/githubaction:0.8.0@sha256:a4f4e4fcf0950a0eb359ed0518ef789272ea4db1e0bdba048a3772925b81a7aa
+    policy: ghcr.io/updatecli/policies/updatecli/githubaction:0.8.1@sha256:48872bbf1a09cfff32ff5ffa07086c20b40d6888c19c36048b18f84bbdad37fe
     values:
       - updatecli/values.d/scm.yaml
       - updatecli/values.d/updatecli_gha.yaml
 
   - name: Install Zizmor everywhere
-    policy: ghcr.io/updatecli/policies/zizmor/githubaction/scaffold:0.5.3@sha256:4e5d5d1cd0b21e0c09ca2eb153a097756f502d6f5dd0296f37709daa748dba58
+    policy: ghcr.io/updatecli/policies/zizmor/githubaction/scaffold:0.6.0@sha256:a0fce8b97fa03cb8aefa5e4d2c3bd6eafe02eb773a5d3f1ee67644962cd9dbfa
     values:
       - updatecli/values.d/scm_githubsearch.yaml
