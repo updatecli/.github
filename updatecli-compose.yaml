@@ -40,5 +40,5 @@ policies:
       config:
         rules:
           secrets-outside-env:
-          disable: true
+            disable: true
 
