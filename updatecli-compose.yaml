@@ -1,38 +1,39 @@
 ---
 policies:
-  - name: Sync Default repository files
-    policy: ghcr.io/updatecli/policies/file:0.3.4@sha256:52562d8f76f8148ac82146ebed48ad75c85408537a6187543179201a65ab7db5
-    values:
-      - updatecli/values.d/sync_default.yaml
-
   - name: Sync AGPL license
+    id: agpl
     policy: ghcr.io/updatecli/policies/file:0.3.4@sha256:52562d8f76f8148ac82146ebed48ad75c85408537a6187543179201a65ab7db5
     values:
       - updatecli/values.d/license/agpl.yaml
 
   - name: Sync Apache license
+    id: apache
     policy: ghcr.io/updatecli/policies/file:0.3.4@sha256:52562d8f76f8148ac82146ebed48ad75c85408537a6187543179201a65ab7db5
     values:
       - updatecli/values.d/license/apache2.yaml
 
   - name: Update Updatecli policies
+    id: policy
     policy: ghcr.io/updatecli/policies/updatecli/autodiscovery:0.8.1@sha256:f8edda1a6cbf0d7274e2b847ede29fc4dc70dd5302ccb8575ae21b069cc0d8a0
     values:
       - updatecli/values.d/scm.yaml
 
   - name: Update githubactions
+    id: gha
     policy: ghcr.io/updatecli/policies/autodiscovery/githubaction:0.4.1@sha256:869b676074f9fee7edd5d488140a12c3b09a5f8a175f12f26ea85a4f8bd0a9d1
     values:
       - updatecli/values.d/scm.yaml
       - updatecli/values.d/githubaction.yaml
 
   - name: Handle Updatecli version in GitHub action
+    id: updatecli
     policy: ghcr.io/updatecli/policies/updatecli/githubaction:0.8.1@sha256:48872bbf1a09cfff32ff5ffa07086c20b40d6888c19c36048b18f84bbdad37fe
     values:
       - updatecli/values.d/scm.yaml
       - updatecli/values.d/updatecli_gha.yaml
 
   - name: Install Zizmor everywhere
+    id: zizmor
     policy: ghcr.io/updatecli/policies/zizmor/githubaction/scaffold:0.7.0@sha256:42be158b93db998f4fa9a3b85477e43d2676f28ff2134e8ded4598713bbc58d8
     values:
       - updatecli/values.d/scm_githubsearch.yaml
@@ -41,3 +42,9 @@ policies:
         rules:
           secrets-outside-env:
             disable: true
+
+  - name: Install Typos everywhere
+    id: typos
+    policy: ghcr.io/updatecli/policies/typos/githubaction:0.1.1@sha256:b25d4e4e7e1e273bf6cd7f431b3f3b1c9782541b0bc5f52ac35da40f31902ac6
+    values:
+      - updatecli/values.d/scm_githubsearch.yaml
