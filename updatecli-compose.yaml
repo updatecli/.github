@@ -45,6 +45,6 @@ policies:
 
   - name: Install Typos everywhere
     id: typos
-    policy: ghcr.io/updatecli/policies/typos/githubaction:0.1.1@sha256:b25d4e4e7e1e273bf6cd7f431b3f3b1c9782541b0bc5f52ac35da40f31902ac6
+    policy: ghcr.io/updatecli/policies/typos/githubaction:0.1.2@sha256:bd052609cded659c90dd1d3a60ebc5f1368b0f93aac5adf8ff13c3250e97f161
     values:
       - updatecli/values.d/scm_githubsearch.yaml
