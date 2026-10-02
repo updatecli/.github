@@ -15,7 +15,7 @@ This is a community-oriented project, all contributions are greatly appreciated.
 
 Here is a non-exhaustive list of contributions:
 
-* ⭐️ our main GitHub repository [updatecli/updatecli](https://github.com/updatecli/updatecli/stargazers)
+* ⭐️ our main GitHub repository [updatecli/updatecli](https://github.com/updatecli/updatecli/)
 * Propose a new feature request on any of [updatecli](https://github.com/updatecli/) repositories.
 * Highlight an existing feature request with ":thumbsup:" on any of the [updatecli](https://github.com/updatecli/) repositories.
 * Contribute to any repository in the [updatecli](https://github.com/updatecli/) organization
