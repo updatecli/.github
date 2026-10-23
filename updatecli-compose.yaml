@@ -2,32 +2,32 @@
 policies:
   - name: Sync AGPL license
     id: agpl
-    policy: ghcr.io/updatecli/policies/file:0.3.4@sha256:52562d8f76f8148ac82146ebed48ad75c85408537a6187543179201a65ab7db5
+    policy: ghcr.io/updatecli/policies/file:0.4.0@sha256:3485163648cbe62f3be9a21fa2d4c145f286c5a11d2c4fb1ce5260a83d4e49ab
     values:
       - updatecli/values.d/license/agpl.yaml
 
   - name: Sync Apache license
     id: apache
-    policy: ghcr.io/updatecli/policies/file:0.3.4@sha256:52562d8f76f8148ac82146ebed48ad75c85408537a6187543179201a65ab7db5
+    policy: ghcr.io/updatecli/policies/file:0.4.0@sha256:3485163648cbe62f3be9a21fa2d4c145f286c5a11d2c4fb1ce5260a83d4e49ab
     values:
       - updatecli/values.d/license/apache2.yaml
 
   - name: Update Updatecli policies
     id: policy
-    policy: ghcr.io/updatecli/policies/updatecli/autodiscovery:0.8.1@sha256:f8edda1a6cbf0d7274e2b847ede29fc4dc70dd5302ccb8575ae21b069cc0d8a0
+    policy: ghcr.io/updatecli/policies/updatecli/autodiscovery:0.9.0@sha256:67026697434a99f6e01a662caa662e8ed02e39e8abf8f7399ab673d113abb360
     values:
       - updatecli/values.d/scm.yaml
 
   - name: Update githubactions
     id: gha
-    policy: ghcr.io/updatecli/policies/autodiscovery/githubaction:0.4.1@sha256:869b676074f9fee7edd5d488140a12c3b09a5f8a175f12f26ea85a4f8bd0a9d1
+    policy: ghcr.io/updatecli/policies/autodiscovery/githubaction:0.5.0@sha256:7dd97c132950994dc3fb89e0bc77037358e9168d8e6980705b2a06e444270626
     values:
       - updatecli/values.d/scm.yaml
       - updatecli/values.d/githubaction.yaml
 
   - name: Handle Updatecli version in GitHub action
     id: updatecli
-    policy: ghcr.io/updatecli/policies/updatecli/githubaction:0.9.1@sha256:49c07d724474ff7976f7ad5ecb0db9aa46448b456d08f82717913b403a0f02d8
+    policy: ghcr.io/updatecli/policies/updatecli/githubaction:0.10.0@sha256:666a807c7e1f260fa3d9357fd2b60c57f5dedbd6f29f97b6f82d882ed4058608
     values:
       - updatecli/values.d/scm.yaml
       - updatecli/values.d/updatecli_gha.yaml
